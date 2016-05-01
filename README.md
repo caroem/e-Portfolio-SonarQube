@@ -1,6 +1,6 @@
 # e-Portfolio-SonarQube
 
-##Installation SonarQube unter Verwendung des DHBW-Server
+##Installation SonarQube unter Verwendung des DHBW-Servers
 
 - Erstellung eines neuen Accounts auf http://sonarqube.xxxxxxxxxxx/xxxxx
 - 
