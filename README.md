@@ -67,3 +67,16 @@ sonarRunner {
 
 Danach muss im Projekt im Terminal `gradle sonarRunner` ausgeführt werden. Die Ergebnisse können unter der URL des SonarQube Servers eingesehen werden.
 
+
+## Git Badge
+Um ein Git Badge zu verwenden muss folgendes auf die GitHub Seite eingefügt werden:
+
+[![Quality Gate](xxxxxx/api/badges/gate?key=projectKey)](xxxxx/overview?id=projectKey)
+
+Hier muss die URL des SonarQube Servers und der project Key angepasst werden.
+
+[![Quality Gate](http://sonarqube.it.dh-
+karlsruhe.de/api/badges/gate?key=SQ25:SQ25)](http://sonarqube.it.dh-
+karlsruhe.de/overview?id=SQ25:SQ25)
+
+
