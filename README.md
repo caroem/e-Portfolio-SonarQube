@@ -1,6 +1,8 @@
 # e-Portfolio-SonarQube
 
 ##Installation SonarQube unter Verwendung des DHBW-Server
+- Erstellung eines neuen Accounts auf http://sonarqube.xxxxxxxxxxx/xxxxx
+- 
 - Aktuelle Version von SonarQube unter http://www.sonarqube.org/downloads/ downloaden und entpacken
 - SonarQube Server starten 
 
@@ -42,3 +44,25 @@ sonar.sources=.
 #sonar.sourceEncoding=UTF-8
 ``` 
 Hier müssen noch die Variablen sonar.projectKey, sonar.projectName, sonar.projectVersion angepasst werden.
+
+Um die Code-Analyse zu starten muss `sonar-runner` innerhalb des Projekts im Terminal ausgeführt werden. Danach kann das Projekt unter der Adresse http://xxxxxxxxx-karlsruhe.de` eingesehen werden.
+
+## Konfiguration eines Java Projekts mit Gradle
+- In `build.gradle` folgendes einfügen
+```
+apply plugin: 'sonar-runner'
+
+sonarRunner {
+    sonarProperties {
+        property "sonar.host.url", "http://xxxxxx/"
+        property "sonar.projectName", "xxxxx"
+        property "sonar.projectVersions", "1.0.0"
+        property "sonar.sources", "xxxx"
+        property "sourceEncoding", "UTF-8"
+    }
+}
+```
+- sonar.host.url (URL/IP zum SonarQube Server), sonar.projectName, sonar.projectVersions, sonar.sources (Pfad zum main-Verzeichnis) anpassen
+
+Danach muss im Projekt im Terminal `gradle sonarRunner` ausgeführt werden. Die Ergebnisse können unter der URL des SonarQube Servers eingesehen werden.
+
