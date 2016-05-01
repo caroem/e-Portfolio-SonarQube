@@ -1,0 +1,5 @@
+projectKey=SQ25:SQ25
+serverUrl=http://sonarqube.it.dh-karlsruhe.de
+dashboardUrl=http://sonarqube.it.dh-karlsruhe.de/dashboard/index/SQ25:SQ25
+ceTaskId=AVRuLKUAByBA63aaFdvc
+ceTaskUrl=http://sonarqube.it.dh-karlsruhe.de/api/ce/task?id=AVRuLKUAByBA63aaFdvc
