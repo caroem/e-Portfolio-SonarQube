@@ -2,7 +2,7 @@
 
 ##Installation SonarQube unter Verwendung des DHBW-Servers
 
-- Erstellung eines neuen Accounts auf http://sonarqube.xxxxxxxxxxx/xxxxx
+- Erstellung eines neuen Accounts auf http://193.196.7.25/users/new
 - 
 - Aktuelle Version von SonarQube unter http://www.sonarqube.org/downloads/ downloaden und entpacken
 - SonarQube Server starten 
@@ -15,10 +15,10 @@
 
 - SonarQube Scanner unter http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner downloaden und entpacken
 - In das /conf Verzeichnis des entpackten SonarQube Scanners gehen
-- sonar-scanner.properties öffnen und folgende Zeile hinzufügen: `sonar.host.url=http://xxxxxxxxx-karlsruhe.de` 
+- sonar-scanner.properties öffnen und folgende Zeile hinzufügen: `sonar.host.url=http://193.196.7.25/` 
 
 &nbsp;
-  Innerhalb der DH: `sonar.host.url=http://xxx.xxx.xxx.xxx/`
+  Innerhalb der DH: `sonar.host.url=http://193.196.7.25/users/new`
 
 - sonar-scanner/bin zum PATH hinzufügen 
 
@@ -46,7 +46,7 @@ sonar.sources=.
 ``` 
 Hier müssen noch die Variablen sonar.projectKey, sonar.projectName, sonar.projectVersion angepasst werden.
 
-Um die Code-Analyse zu starten muss `sonar-runner` innerhalb des Projekts im Terminal ausgeführt werden. Danach kann das Projekt unter der Adresse http://xxxxxxxxx-karlsruhe.de` eingesehen werden.
+Um die Code-Analyse zu starten muss `sonar-runner` innerhalb des Projekts im Terminal ausgeführt werden. Danach kann das Projekt unter der Adresse http://193.196.7.25/ eingesehen werden.
 
 ## Konfiguration eines Java Projekts mit Gradle
 - In `build.gradle` folgendes einfügen
@@ -55,7 +55,7 @@ apply plugin: 'sonar-runner'
 
 sonarRunner {
     sonarProperties {
-        property "sonar.host.url", "http://xxxxxx/"
+        property "sonar.host.url", "http://193.196.7.25/"
         property "sonar.projectName", "xxxxx"
         property "sonar.projectVersions", "1.0.0"
         property "sonar.sources", "xxxx"
