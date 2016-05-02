@@ -15,10 +15,10 @@
 
 - SonarQube Scanner unter http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner downloaden und entpacken
 - In das /conf Verzeichnis des entpackten SonarQube Scanners gehen
-- sonar-scanner.properties öffnen und folgende Zeile hinzufügen: `sonar.host.url=http://193.196.7.25/` 
+- sonar-scanner.properties öffnen und folgende Zeile hinzufügen: `sonar.host.url=http://sonarqube.it.dh-karlsruhe.de/` 
 
 &nbsp;
-  Innerhalb der DH: `sonar.host.url=http://193.196.7.25/users/new`
+  Innerhalb der DH: `sonar.host.url=http://193.196.7.25/`
 
 - sonar-scanner/bin zum PATH hinzufügen 
 
